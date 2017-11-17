@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import ShoppingCart from './ShoppingCart'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* Put your ShoppingCart element here */}
+        <ShoppingCart />
       </div>
     );
   }

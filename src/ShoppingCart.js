@@ -4,12 +4,14 @@ import CartFooter from './CartFooter'
 import CartItems from './CartItems'
 
 
-const ShoppingCart = () => {
+const ShoppingCart = ({items, year}) => {
+  // console.log('CartItems props:', items)
+  // console.log('ShoppingCart props:', props)
   return (
     <div>
       <CartHeader />
-      <CartItems />
-      <CartFooter />
+      <CartItems items={items}/>
+      <CartFooter year={year}/>
     </div>
   )
 }
